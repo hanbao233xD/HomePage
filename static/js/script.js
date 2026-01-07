@@ -223,3 +223,76 @@ function toggleFAQ(element) {
         faqItem.classList.add('active');
     }
 }
+
+// Music Player Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const musicPlayer = document.getElementById('musicPlayer');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const progressBar = document.getElementById('progressBar');
+    const progress = document.getElementById('progress');
+    const currentTimeSpan = document.getElementById('currentTime');
+    const durationSpan = document.getElementById('duration');
+
+    // Format time in mm:ss
+    function formatTime(seconds) {
+        const min = Math.floor(seconds / 60);
+        const sec = Math.floor(seconds % 60);
+        return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+    }
+
+    // Update progress bar
+    function updateProgress() {
+        const percent = (musicPlayer.currentTime / musicPlayer.duration) * 100;
+        progress.style.width = `${percent}%`;
+        currentTimeSpan.textContent = formatTime(musicPlayer.currentTime);
+    }
+
+    // Set progress bar on click
+    function setProgress(e) {
+        const width = this.clientWidth;
+        const clickX = e.offsetX;
+        const duration = musicPlayer.duration;
+
+        musicPlayer.currentTime = (clickX / width) * duration;
+    }
+
+    // Update duration when metadata is loaded
+    musicPlayer.addEventListener('loadedmetadata', function() {
+        durationSpan.textContent = formatTime(musicPlayer.duration);
+    });
+
+    // Update progress as music plays
+    musicPlayer.addEventListener('timeupdate', updateProgress);
+
+    // Toggle play/pause
+    function togglePlayPause() {
+        if (musicPlayer.paused) {
+            musicPlayer.play();
+            playPauseBtn.innerHTML = `
+                <svg class="play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+            `;
+        } else {
+            musicPlayer.pause();
+            playPauseBtn.innerHTML = `
+                <svg class="play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            `;
+        }
+    }
+
+    // Event listeners
+    playPauseBtn.addEventListener('click', togglePlayPause);
+    progressBar.addEventListener('click', setProgress);
+
+    // Update play/pause button when music ends
+    musicPlayer.addEventListener('ended', function() {
+        playPauseBtn.innerHTML = `
+            <svg class="play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+        `;
+    });
+});

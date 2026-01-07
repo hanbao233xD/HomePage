@@ -61,7 +61,9 @@ a:focus {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
 /* 设置滚动条样式 */
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -75,7 +77,6 @@ a:focus {
 ::-webkit-scrollbar-track {
     background-color: var(--main-bg-color, linear-gradient(50deg, #a2d0ff, #ffffff));
 }
-
 
 html[data-theme="dark"] {
     --main-bg-color: rgb(0, 0, 0);
@@ -108,7 +109,6 @@ html[data-theme="dark"] {
     --icon-6-hover-color: rgb(31, 33, 35);
 }
 
-
 body {
     display: flex;
     height: 100%;
@@ -118,7 +118,6 @@ body {
     overflow-x: hidden;
     justify-content: center;
     color: var(--main-text-color);
-
 }
 
 #PageLoading {
@@ -182,7 +181,6 @@ body {
         /*-webkit-transform: rotate(180deg);*/
         /*transform: rotate(180deg);*/
     }
-
     100% {
         /*-ms-transform: rotate(0deg);*/
         /*-webkit-transform: rotate(0deg);*/
@@ -196,16 +194,12 @@ body {
         /*-webkit-transform: rotate(180deg);*/
         /*transform: rotate(180deg);*/
     }
-
     100% {
         /*-ms-transform: rotate(0deg);*/
         /*-webkit-transform: rotate(0deg);*/
         /*transform: rotate(0deg);*/
     }
 }
-
-
-
 
 .main {
     width: 100%;
@@ -226,19 +220,16 @@ body {
 
 .left-main {
     width: 100%;
-     height: 100vh;
+    height: 100vh;
     overflow-y: scroll;
     display: flex;
-  
     align-items: center;
     flex-direction: column;
-
 }
 
 .left-main::-webkit-scrollbar {
-   display: none;
+    display: none;
 }
-
 
 .logo {
     flex-shrink: 0;
@@ -248,12 +239,8 @@ body {
     margin-top: 50px;
     background-size: cover;
     border-radius: 50%;
-    
     transition: all 0.8s ease-in-out;
-   
 }
-
-
 
 .left-div {
     flex-shrink: 0;
@@ -302,7 +289,6 @@ body {
     font-size: 13px;
     border-radius: 10px;
     background: var(--main-bg-color);
-
 }
 
 #line {
@@ -324,8 +310,6 @@ body {
     color: #82888a;
 }
 
-
-
 .focus {
     width: 15px;
     height: 15px;
@@ -341,14 +325,15 @@ body {
     background-color: #2ecc71;
     animation: focus 1.8s ease infinite;
 }
+
 #line::-webkit-scrollbar {
-   display: none;
+    display: none;
 }
+
 .left-title {
     font-size: 20px;
     margin-top: 30px;
 }
-
 
 .right {
     width: calc(100% - 250px);
@@ -360,20 +345,17 @@ body {
 }
 
 .welcome {
-
     font-size: 55px;
     font-weight: 800;
     margin: 30px 0;
 }
 
 .description {
-
     font-size: 20px;
     margin-top: 7px;
 }
 
 .gradientText {
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200%;
@@ -386,23 +368,18 @@ body {
     0% {
         background-position: 100%;
     }
-
     25% {
         background-position: 50%;
     }
-
     50% {
         background-position: 0%;
     }
-
     75% {
         background-position: 50%;
     }
-
     100% {
         background-position: 100%;
     }
-
 }
 
 .purpleText {
@@ -416,7 +393,6 @@ body {
     border-radius: 5px;
     font-size: 15px;
     padding: 3px 5px;
-
 }
 
 .iconContainer {
@@ -427,14 +403,11 @@ body {
     align-items: center;
     overflow-x: scroll;
     margin-top: 20px;
-
 }
 
 .iconContainer::-webkit-scrollbar {
-   display: none;
+    display: none;
 }
-
-
 
 .iconItem {
     width: 44px;
@@ -475,7 +448,6 @@ body {
     display: flex;
 }
 
-
 .iconItemLong:nth-child(1):hover {
     background: var(--icon-1-hover-color);
 }
@@ -496,6 +468,7 @@ body {
     background: var(--icon-5-hover-color);
 }
 
+
 /* .iconItem:nth-child(6):hover {
     background: var(--icon-6-hover-color);
 } */
@@ -506,7 +479,6 @@ body {
 
 .switch:hover {
     width: 55px;
-
     background: var(--icon-6-hover-color);
 }
 
@@ -614,7 +586,8 @@ body {
     }
 }
 
-.intro-content, .about-content {
+.intro-content,
+.about-content {
     background: var(--project-item-bg-color);
     border-radius: 12px;
     padding: 24px;
@@ -623,7 +596,9 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
 /* FAQ Styles */
+
 .faq-container {
     margin: 20px 0;
 }
@@ -639,7 +614,7 @@ body {
 }
 
 .faq-item:hover {
-    background: var(--project-item-hover-color); 
+    background: var(--project-item-hover-color);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -654,6 +629,7 @@ body {
     transition: all 0.3s ease;
     user-select: none;
 }
+
 
 /* .faq-question:hover {
     background: var(--project-item-hover-color);
@@ -691,6 +667,7 @@ body {
     color: var(--project-item-left-text-color);
 }
 
+
 /* .faq-answer a {
     color: var(--purple-text-color);
     text-decoration: underline;
@@ -701,28 +678,31 @@ body {
     color: #b0b4f7;
 } */
 
-.intro-content p, .about-content p {
+.intro-content p,
+.about-content p {
     margin: 12px 0;
     font-size: 16px;
     line-height: 1.6;
     color: var(--project-item-left-text-color);
 }
 
-.intro-content p:first-child, .about-content p:first-child {
+.intro-content p:first-child,
+.about-content p:first-child {
     margin-top: 0;
 }
 
-.intro-content p:last-child, .about-content p:last-child {
+.intro-content p:last-child,
+.about-content p:last-child {
     margin-bottom: 0;
 }
 
 .intro-ul {
-    padding-left: 20px; 
+    padding-left: 20px;
     margin: 12px 0;
     font-size: 16px;
     line-height: 2;
     color: var(--project-item-left-text-color);
-    list-style-type: disc; 
+    list-style-type: disc;
 }
 
 .highlight-text {
@@ -756,13 +736,10 @@ body {
     width: calc(50% - 60px);
 }
 
-
 .projectItem:hover {
     box-shadow: 0 8px 16px -4px #2c2d300c;
     background-color: var(--project-item-hover-color);
 }
-
-
 
 .projectItemLeft p {
     font-size: 13px;
@@ -774,7 +751,6 @@ body {
     font-weight: normal;
     font-size: 18px;
     margin: 0px;
-
     transition: all 0.4s ease;
     color: var(--project-item-left-title-color);
 }
@@ -784,7 +760,6 @@ body {
     height: 100%;
     width: 80%;
 }
-
 
 .projectItemRight {
     overflow: hidden;
@@ -798,7 +773,6 @@ body {
 .projectItemRight img {
     height: 44px;
     width: 44px;
-
 }
 
 .skill {
@@ -832,94 +806,66 @@ footer {
     transition: 0.3;
 }
 
-
-
-
 @media (max-width: 1000px) {
-
     .projectItem {
         width: calc(100% - 25px);
     }
-
-
-  
-
-
 }
 
 @media (max-width: 800px) {
-
-
     .right {
         width: 100%;
     }
-.tanChiShe {
-    width: 100%;
-}
+    .tanChiShe {
+        width: 100%;
+    }
     .description {
         font-size: 16px;
     }
-
     .welcome {
         font-size: 48px;
-
     }
-
     .button-container {
         margin: 20px 0;
         padding: 6px;
         gap: 8px;
     }
-
     .tab-button {
         padding: 10px 16px;
         font-size: 14px;
         min-height: 40px;
     }
-
     .projectItemLeft p {
         font-size: 14px;
     }
-
     .projectItemLeft h1 {
-
         font-size: 15px;
     }
-
     .projectItem:hover h1 {
-
         /* font-size: 20px; */
-
     }
-
     .projectList {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .skill #skillWap {
         display: block;
     }
-
     .skill #skillPc {
         display: none;
     }
-
     /* FAQ Mobile Styles */
     .faq-question {
         padding: 16px;
         font-size: 14px;
     }
-
     .faq-answer {
         font-size: 14px;
     }
-
     .faq-item.active .faq-answer {
         padding: 0 16px 16px 16px;
     }
-
     .left {
         position: fixed;
         z-index: 9999;
@@ -930,7 +876,6 @@ footer {
         background: none;
         transition: all 0.3s linear;
     }
-
     .left-main {
         position: absolute;
         float: left;
@@ -943,24 +888,14 @@ footer {
         background: var(--main-bg-color);
         transition: all 0.25s ease-out;
     }
-
- 
-
     .left-open {
         pointer-events: auto;
         background: rgba(100, 100, 100, 0.5);
     }
-
-
     .left-main-open {
         left: 0;
     }
-
 }
-
-
-
-
 
 .pop-up {
     position: fixed;
@@ -1025,12 +960,6 @@ footer {
 .pop-up-close.active {
     opacity: 1;
 }
-
-
-
-
-
-
 
 .onoffswitch {
     position: relative;
@@ -1102,7 +1031,6 @@ footer {
     top: 12.5%;
     bottom: 12.5%;
     right: 5px;
-
     border-radius: 20px;
     transition: all 0.2s ease-in 0s;
 }
@@ -1115,6 +1043,92 @@ footer {
     right: 50%;
 }
 
-.tab-button, .button-container button {
+.tab-button,
+.button-container button {
     -webkit-tap-highlight-color: transparent;
+}
+
+
+/* Music Player Styles */
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    background: var(--project-item-bg-color);
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.music-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--icon-bg-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--main-text-color);
+}
+
+.player-btn:hover {
+    background: var(--icon-1-hover-color);
+    transform: scale(1.05);
+}
+
+
+/* Additional player styles */
+
+.play-icon {
+    pointer-events: none;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--text-bg-color);
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: var(--purple-text-color);
+    border-radius: 3px;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.time-text {
+    font-size: 12px;
+    color: var(--project-item-left-text-color);
+    min-width: 30px;
+    text-align: center;
 }
