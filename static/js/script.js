@@ -9,7 +9,7 @@ console.log('  %c/______\\', 'color: #f7b267; font-size: 20px;');
 
 
 document.addEventListener('contextmenu', function(event) {
-  event.preventDefault(); // 阻止默认的上下文菜单行为
+    event.preventDefault(); // 阻止默认的上下文菜单行为
 });
 
 
@@ -19,16 +19,16 @@ function openTab(tabName) {
     for (var i = 0; i < tabContents.length; i++) {
         tabContents[i].classList.remove('content-active');
     }
-    
+
     // Remove active class from all buttons
     var tabButtons = document.getElementsByClassName('tab-button');
     for (var i = 0; i < tabButtons.length; i++) {
         tabButtons[i].classList.remove('but-active');
     }
-    
+
     // Show the selected tab content
     document.getElementById(tabName).classList.add('content-active');
-    
+
     // Add active class to the clicked button
     event.target.classList.add('but-active');
 }
@@ -36,7 +36,7 @@ function openTab(tabName) {
 
 function toggleClass(selector, className) {
     var elements = document.querySelectorAll(selector);
-    elements.forEach(function (element) {
+    elements.forEach(function(element) {
         element.classList.toggle(className);
     });
 }
@@ -52,8 +52,8 @@ function PopUp(imageURL) {
 }
 
 function playSound(soundUrl) {
-  const audio = new Audio(soundUrl);
-  audio.play().catch(e => console.error("Failed to play sound effect:", e));
+    const audio = new Audio(soundUrl);
+    audio.play().catch(e => console.error("Failed to play sound effect:", e));
 }
 
 function left() {
@@ -63,7 +63,7 @@ function left() {
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
 
 
     var themeState = getCookie("themeState") || "Light";
@@ -89,12 +89,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (theme == "Dark") {
             themeState = "Dark";
             changeSvg("#ffffff");
-            tanChiShe.src = "./static/svg/snake-Dark.svg";
             htmlTag.dataset.theme = 'dark';
         } else if (theme == "Light") {
             themeState = "Light";
             changeSvg("#000000");
-            tanChiShe.src = "./static/svg/snake-Light.svg";
             htmlTag.dataset.theme = '';
         }
         setCookie("themeState", theme, 365);
@@ -131,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     document.querySelectorAll('.tab-button').forEach(button => {
-    button.addEventListener('click', () => {
+        button.addEventListener('click', () => {
             playSound('../static/soundeffects/click.mp3');
         });
     });
@@ -146,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    switchCheckbox.addEventListener('change', function () {
+    switchCheckbox.addEventListener('change', function() {
 
         if (themeState == "Dark") {
 
@@ -184,6 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /*淡入效果*/
     var projectItems = document.querySelectorAll(".projectItem");
+
     function checkProjectItems() {
         for (var i = 0; i < projectItems.length; i++) {
             var projectItem = projectItems[i];
@@ -206,7 +205,7 @@ function toggleFAQ(element) {
     const isActive = faqItem.classList.contains('active');
 
     playSound('../static/soundeffects/collapsible_open.mp3')
-    
+
     // Close all other FAQ items
     // const allFaqItems = document.querySelectorAll('.faq-item');
     // allFaqItems.forEach(item => {
@@ -217,7 +216,7 @@ function toggleFAQ(element) {
     if (isActive) {
         faqItem.classList.remove('active');
     }
-    
+
     // Toggle current FAQ item
     if (!isActive) {
         faqItem.classList.add('active');
