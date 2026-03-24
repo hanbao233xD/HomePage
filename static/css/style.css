@@ -1049,6 +1049,85 @@ footer {
 }
 
 
+/* Project Card Styles */
+
+.project-card-header {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+    background: linear-gradient(120deg, var(--gradient-start, #bd34fe), var(--gradient-middle, #e0321b) 30%, var(--gradient-end, #41d1ff) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: backgroundSizeAnimation 5s ease-in-out infinite;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    background: var(--project-item-bg-color);
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.project-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.project-card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.project-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--main-text-color);
+}
+
+.project-card-desc {
+    font-size: 13px;
+    color: var(--project-item-left-text-color);
+}
+
+.project-card-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 20px;
+    background: var(--purple-text-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card-btn:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+}
+
+
 /* Music Player Styles */
 
 .music-player {
