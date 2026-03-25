@@ -1,0 +1,1 @@
+2|https://littlecold.cn/littleclicker/apk/LittleClicker.apk|修复了点击位置，增加了检查更新，更新版本号~
