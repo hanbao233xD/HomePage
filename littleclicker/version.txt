@@ -1,1 +1,1 @@
-4|https://littlecold.cn/littleclicker/apk/LittleClicker.apk|【修复自动保存，务必更新】新版发布啦~该版本增加了自动保存，编辑时自动隐藏悬浮窗，录制穿透
+5|https://littlecold.cn/littleclicker/apk/LittleClicker.apk|【修复混淆导致的无法保存，务必更新】新版发布啦~该版本增加了自动保存，编辑时自动隐藏悬浮窗，录制穿透
