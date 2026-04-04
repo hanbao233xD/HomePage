@@ -1,1 +1,1 @@
-5|https://littlecold.cn/littleclicker/apk/LittleClicker.apk|【修复混淆导致的无法保存，务必更新】新版发布啦~该版本增加了自动保存，编辑时自动隐藏悬浮窗，录制穿透
+6|https://littlecold.cn/littleclicker/apk/LittleClicker.apk|新版本发布啦~更新日志：1.修复 特定华为机型定时点击时悬浮窗无法停止问题，2.修复 编辑弹窗无法滚动的问题，3.修复 循环漏点问题，4.新增 三大按键模拟，5.新增 悬浮停止提示 ，6.新增 定时悬浮窗自动开启与增强 NTP 同步
