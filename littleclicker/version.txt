@@ -1,1 +1,1 @@
-10|https://littlecold.cn/littleclicker/apk/LittleClicker.apk|亲爱的用户，定时点击器Ultra 1.9 已发布~\n1. 悬浮窗新增折叠/展开功能，点击小白条切换，缩小状态仅保留运行和关闭按钮\n2. 配置管理新增"保存为空配置"\n3. 新增配置导入/导入功能，支持文件选择器导入和“通过其他应用打开”导入配置文件\n更新方式：根据软件内提示，跳转安装最新包体即可~
+11|https://littlecold.cn/littleclicker/apk/LittleClicker.apk|亲爱的用户，定时点击器Ultra 1.9.1 已发布~\n1. 修复了一些已知问题:) \n更新方式：根据软件内提示，跳转安装最新包体即可~
